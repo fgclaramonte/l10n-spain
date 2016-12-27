@@ -13,7 +13,8 @@
                 <span class="customer_title">Customer data</span><br />
                 Name: <t t-esc="order.attributes.client.name ? order.attributes.client.name : ''"/><br />
                 VAT: <t t-esc="order.attributes.client.vat ? order.attributes.client.vat : ''"/><br />
-                Address: <t t-esc="order.attributes.client.street ? order.attributes.client.street : ''"/>
+		Address: <t t-esc="order.attributes.client.street ? order.attributes.client.street : ''"/>
+		Phone: <t t-esc="order.attributes.client.phone ? order.attributes.client.phone : ''"/><br />
             </t>
         </t>
         <t t-jquery="[t-esc='widget.format_currency(order.getSubtotal())']" t-operation="replace">

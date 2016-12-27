@@ -47,7 +47,7 @@
                     <t t-esc="o.partner_id.street"/>
                 </span>
             </div>
-	    <div class="customer_vat">
+	    <div class="customer_phone">
                 <span class="customer_phone_lbl">PHONE:</span>
                 <span t-if="o.partner_id.phone" class="customer_phone_value">
                     <t t-esc="o.partner_id.phone"/>
